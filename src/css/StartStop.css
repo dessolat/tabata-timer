@@ -1,0 +1,111 @@
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.start-btn {
+  min-width: 21vw;
+  min-height: 4vw;
+  font-family: inherit;
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+  background: -webkit-gradient(linear, left top, right top, from(#81e6d9), to(#4fd1c5));
+  background: linear-gradient(90deg, #81e6d9 0%, #4fd1c5 100%);
+  border: none;
+  border-radius: 1000px;
+  -webkit-box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+          box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 7px;
+}
+
+.start-btn::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(21vw + 12px);
+  min-height: calc(4vw + 12px);
+  border: 1px solid #00FFCB;
+  -webkit-box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+          box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+
+.start-btn:hover, .start-btn:focus {
+  color: #313133;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.start-btn:hover::before, .start-btn:focus::before {
+  opacity: 1;
+}
+
+.start-btn::after {
+  content: '';
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: ring 1.5s infinite;
+          animation: ring 1.5s infinite;
+}
+
+.start-btn:hover::after, .start-btn:focus::after {
+  -webkit-animation: none;
+          animation: none;
+  display: none;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    width: 2vw;
+    height: 2vw;
+    opacity: 1;
+  }
+  100% {
+    width: 21vw;
+    height: 21vw;
+    opacity: 0;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 2vw;
+    height: 2vw;
+    opacity: 1;
+  }
+  100% {
+    width: 21vw;
+    height: 21vw;
+    opacity: 0;
+  }
+}
