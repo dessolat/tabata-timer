@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Timer from './components/Timer';
 import StartStop from './components/StartStop';
 import './css/App.css';
+import { actionsInit } from './utils';
 
 const App = () => {
   const [settings, setSettings] = useState({
@@ -22,26 +23,9 @@ const App = () => {
     setTimer((prepareTime + (workTime + restTime) * roundsNumber) * cyclesNumber);
   }, [settings]);
 
-
-
-  const actionsInit = () => {
-    const actions = [];
-    const { prepareTime, workTime, restTime, roundsNumber, cyclesNumber } = settings;
-
-    for (let i = 1; i <= cyclesNumber; i++) {
-      actions.push({ header: 'Prepare!', time: prepareTime });
-      for (let j = 1; j <= roundsNumber; j++) {
-        actions.push({ header: 'Work!', time: workTime });
-        actions.push({ header: 'Rest time!', time: restTime });
-      }
-    }
-
-    console.log('Initial actions: ', actions);
-  };
-
   const startTabata = () => {
     setTabataStarted(true);
-		actionsInit();
+		actionsInit(settings);
     console.log('started');
   };
 
