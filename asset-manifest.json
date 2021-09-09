@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/tabata-timer/static/css/main.4abcaa83.chunk.css",
+    "main.js": "/tabata-timer/static/js/main.f9844134.chunk.js",
+    "main.js.map": "/tabata-timer/static/js/main.f9844134.chunk.js.map",
+    "runtime-main.js": "/tabata-timer/static/js/runtime-main.5f2b1000.js",
+    "runtime-main.js.map": "/tabata-timer/static/js/runtime-main.5f2b1000.js.map",
+    "static/js/2.bfa19bc3.chunk.js": "/tabata-timer/static/js/2.bfa19bc3.chunk.js",
+    "static/js/2.bfa19bc3.chunk.js.map": "/tabata-timer/static/js/2.bfa19bc3.chunk.js.map",
+    "index.html": "/tabata-timer/index.html",
+    "static/css/main.4abcaa83.chunk.css.map": "/tabata-timer/static/css/main.4abcaa83.chunk.css.map",
+    "static/js/2.bfa19bc3.chunk.js.LICENSE.txt": "/tabata-timer/static/js/2.bfa19bc3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f2b1000.js",
+    "static/js/2.bfa19bc3.chunk.js",
+    "static/css/main.4abcaa83.chunk.css",
+    "static/js/main.f9844134.chunk.js"
+  ]
+}
