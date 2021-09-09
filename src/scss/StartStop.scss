@@ -1,12 +1,4 @@
-// .start-btn {
-// 	background-color: transparent;
-// 	border: none;
-// 	font-size: 5vw;
-// 	cursor: pointer;
-// }
-
 .wrap {
-  // height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +51,8 @@ content: '';
 
 .start-btn::after {
   content: '';
-  width: 2vw; height: 2vw;
+  width: 2vw;
+	height: 2vw;
   border-radius: 100%;
   border: 6px solid #00FFCB;
   position: absolute;

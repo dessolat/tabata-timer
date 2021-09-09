@@ -1,7 +1,6 @@
-export const actionsInit = (settings) => {
+export const actionsInit = ({prepareTime, workTime, restTime, roundsNumber, cyclesNumber}) => {
 	const actions = [];
-	const { prepareTime, workTime, restTime, roundsNumber, cyclesNumber } = settings;
-
+	
 	for (let i = 1; i <= cyclesNumber; i++) {
 		actions.push({ header: 'Prepare!', time: prepareTime });
 		for (let j = 1; j <= roundsNumber; j++) {
@@ -9,6 +8,6 @@ export const actionsInit = (settings) => {
 			actions.push({ header: 'Rest time!', time: restTime });
 		}
 	}
-
-	console.log('Initial actions: ', actions);
+	
+	return actions
 };
